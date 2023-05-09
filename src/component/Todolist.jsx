@@ -26,7 +26,7 @@ class TodoList extends Component {
       <li
         key={task.id}
         onClick={() => this.handleTaskClick(task.id)}
-        style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
+        className={task.completed ? "completed" : ""}
       >
         {task.name}
       </li>
